@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMypp.EditTaskPage"
+             Title="EditTaskPage">
+    <StackLayout Padding="20">
+        <Entry x:Name="EntryTitle" Placeholder="Başlık" />
+        <Editor x:Name="EditorDetails" Placeholder="Detaylar" HeightRequest="100" />
+        <DatePicker x:Name="DatePicker" />
+        <TimePicker x:Name="TimePicker" />
+        <Button Text="Kaydet" Clicked="SaveTaskButton_Clicked" />
+    </StackLayout>
+</ContentPage>

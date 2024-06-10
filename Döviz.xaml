@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMypp.Döviz"
+             Title="Döviz">
+    <StackLayout Padding="20">
+        <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*" RowDefinitions="Auto,Auto,Auto,auto,auto,auto,auto,auto ,auto ,auto">
+            <Label Text="Tür" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="Alış" FontSize="Medium" FontAttributes="Bold" Grid.Column="1"/>
+            <Label Text="Satış" FontSize="Medium" FontAttributes="Bold" Grid.Column="2"/>
+            <Label Text="Fark" FontSize="Medium" FontAttributes="Bold" Grid.Column="3"/>
+
+            <Label Text="Dolar:" Grid.Row="1" />
+            <Label x:Name="DolarAlisLabel" Grid.Column="1" Grid.Row="1"/>
+            <Label x:Name="DolarSatisLabel" Grid.Column="2" Grid.Row="1"/>
+            <Label x:Name="DolarFarkLabel" Grid.Column="3" Grid.Row="1"/>
+
+            <Label Text="Euro:" Grid.Row="2" />
+            <Label x:Name="EuroAlisLabel" Grid.Column="1" Grid.Row="2"/>
+            <Label x:Name="EuroSatisLabel" Grid.Column="2" Grid.Row="2"/>
+            <Label x:Name="EuroFarkLabel" Grid.Column="3" Grid.Row="2"/>
+
+            <Label Text="Sterlin:" Grid.Row="3" />
+            <Label x:Name="SterlinAlisLabel" Grid.Column="1" Grid.Row="3"/>
+            <Label x:Name="SterlinSatisLabel" Grid.Column="2" Grid.Row="3"/>
+            <Label x:Name="SterlinFarkLabel" Grid.Column="3" Grid.Row="3"/>
+            
+            <Label Text="Gümüş:" Grid.Row="4" />
+            <Label x:Name="GümüşAlisLabel" Grid.Column="1" Grid.Row="4"/>
+            <Label x:Name="GümüşSatisLabel" Grid.Column="2" Grid.Row="4"/>
+            <Label x:Name="GümüşFarkLabel" Grid.Column="3" Grid.Row="4"/>
+
+            <Label Text="Yarim Altın:" Grid.Row="5" />
+            <Label x:Name="yarimaltinAlisLabel" Grid.Column="1" Grid.Row="5"/>
+            <Label x:Name="yarimaltinSatisLabel" Grid.Column="2" Grid.Row="5"/>
+            <Label x:Name="yarimaltinFarkLabel" Grid.Column="3" Grid.Row="5"/>
+
+            <Label Text="OnsAltın:" Grid.Row="6" />
+            <Label x:Name="OnsAlisLabel" Grid.Column="1" Grid.Row="6"/>
+            <Label x:Name="OnsSatisLabel" Grid.Column="2" Grid.Row="6"/>
+            <Label x:Name="OnsFarkLabel" Grid.Column="3" Grid.Row="6"/>
+
+
+            <Label Text="Ruble:" Grid.Row="7" />
+            <Label x:Name="RubAlisLabel" Grid.Column="1" Grid.Row="7"/>
+            <Label x:Name="RubSatisLabel" Grid.Column="2" Grid.Row="7"/>
+            <Label x:Name="RubFarkLabel" Grid.Column="3" Grid.Row="7"/>
+            
+            <Label Text="Gram Altın:" Grid.Row="8" />
+            <Label x:Name="gramAlisLabel" Grid.Column="1" Grid.Row="8"/>
+            <Label x:Name="gramSatisLabel" Grid.Column="2" Grid.Row="8"/>
+            <Label x:Name="gramFarkLabel" Grid.Column="3" Grid.Row="8"/>
+
+
+
+        </Grid>
+    </StackLayout>
+</ContentPage>

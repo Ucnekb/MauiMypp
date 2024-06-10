@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMypp.MainPage">
+
+    <VerticalStackLayout VerticalOptions="Center"  HorizontalOptions="Center" Spacing="10">
+        <Label Text="Uygulamama hoşgeldiniz!"/>
+
+        <Frame CornerRadius="20">
+            <StackLayout> 
+                   <StackLayout x:Name="loginEkran" Spacing="10" IsVisible="true">
+                    <Label Text="Oturum aç"/>
+                    <Entry x:Name="txtEmail"  Placeholder="Email"  Keyboard="Email"   />
+                    <Entry x:Name="txtPassword"    Placeholder="password" IsPassword="True"    />
+                    <Button Text="Oturum aç" Clicked="LoginClicked"/>
+                    <Button Text="Hesabım yok"   Background="Black"  Clicked="KayitLoginEkranıGoster"/>
+
+
+                   </StackLayout>
+            <StackLayout x:Name="kayitEkran" Spacing="10"  IsVisible="false">
+                <Entry x:Name="txtName"  Placeholder="adınız"  Keyboard="Default"   />
+                <Entry x:Name="txtREmail"  Placeholder="Email"  Keyboard="Email"   />
+                <Entry x:Name="txtRPassword"    Placeholder="password" IsPassword="True"     />
+                    <Button Text="Kaydol" Clicked="RegisterClicked"/>
+                    <Button Text="Hesabım var"   Background="Black"  Clicked="KayitLoginEkranıGoster"/>
+
+                </StackLayout>
+
+</StackLayout>
+
+        </Frame>
+    </VerticalStackLayout>
+
+</ContentPage>

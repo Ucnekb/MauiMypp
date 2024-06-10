@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMypp.Yapılacaklar"
+             Title="Yapılacaklar">
+    <StackLayout Padding="20">
+        <ImageButton   VerticalOptions="End"  HorizontalOptions="End" Source="add.png" HeightRequest="5" WidthRequest="5"  Aspect="AspectFit" Clicked="AddButton_Clicked" />
+        <ListView x:Name="ToDoListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <CheckBox VerticalOptions="Center" />
+                                <Label Text="{Binding Task}" FontAttributes="Bold" FontSize="Medium" VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                            <Label Text="{Binding Details}" FontSize="Small" VerticalOptions="StartAndExpand" />
+                            <Label Text="{Binding Date}" FontSize="Small" VerticalOptions="StartAndExpand" />
+                            <Label Text="{Binding Time}" FontSize="Small" VerticalOptions="StartAndExpand" />
+                            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand">
+                                <ImageButton Source="edit.png" HeightRequest="5" WidthRequest="5"  Clicked="EditButton_Clicked"    Margin="5,0,5,0" />
+                                <ImageButton Source="del.png" HeightRequest="5" WidthRequest="5" Clicked="DeleteButton_Clicked" Margin="5,0,0,0" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
